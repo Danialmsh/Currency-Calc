@@ -116,3 +116,9 @@
     border: 2px solid rgb(226 232 240 / var(--tw-border-opacity, 1)) !important;
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    .calc {
+        width: 95%;
+    }
+}
