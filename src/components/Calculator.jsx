@@ -88,11 +88,42 @@ const Calculator = ({rates}) => {
                     <h2>
                         {`هر ${amount} ${fromRate.name} معادل ${amount * ratio} ${toRate.name}`}
                     </h2>
-                    <div className="firstResultContainer">
-
+                    <div className="firstResultContainer dirrtl">
+                        <div className="fresultItem">
+                            {`ارزش به ${toRate.name}: ${amount * ratio}`}
+                        </div>
+                        |
+                        <div className="fresultItem">
+                            {`نرخ تبدیل: ${ratio}`}
+                        </div>
                     </div>
                     <div className="secResultContainer">
-
+                        <div className="sresultItem">
+                            <div className="cap">
+                                {`قیمت امروز ${fromRate.name} به ${toRate.name} :`}
+                            </div>
+                            <div className="info">
+                                <div className="infoitem">
+                                    {`${ratio} ${toRate.name}`}
+                                </div>
+                                <div className="infoitem">
+                                    -0.49%
+                                </div>
+                            </div>
+                        </div>
+                        <div className="sresultItem">
+                            <div className="cap">
+                                {`قیمت امروز ${toRate.name} به ${fromRate.name} :`}
+                            </div>
+                            <div className="info">
+                                <div className="infoitem">
+                                    {`${1/ratio} ${toRate.name}`}
+                                </div>
+                                <div className="infoitem">
+                                    0.29%
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

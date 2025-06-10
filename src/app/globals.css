@@ -92,7 +92,7 @@
 .resultContainer {
     margin: 10px;
     width: 90%;
-    height: 300px;
+    height: 400px;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1)) !important;
     border-radius: 10px;
     display: flex;
@@ -112,10 +112,62 @@
 .resultContainer .firstResultContainer , .resultContainer .secResultContainer{
     margin: 10px;
     width: 90%;
-    height: 35%;
     border: 2px solid rgb(226 232 240 / var(--tw-border-opacity, 1)) !important;
     border-radius: 10px;
 }
+.resultContainer .firstResultContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+}
+
+.resultContainer .secResultContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 45%;
+}
+
+.resultContainer .secResultContainer .sresultItem{
+    width: 90%;
+    height: 35%;
+    border-bottom: 2px solid rgb(226 232 240 / var(--tw-border-opacity, 1)) !important;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultContainer .secResultContainer .sresultItem .cap{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultContainer .secResultContainer .sresultItem .info{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sresultItem:nth-child(1) .infoitem:nth-child(2) {
+    color: #ef4444;
+}
+
+.sresultItem:nth-child(2) .info .infoitem:nth-child(2) {
+    color: green;
+}
+
+.dirrtl {
+    direction: ltr;
+}
+
 
 @media (max-width: 768px) {
     .calc {
