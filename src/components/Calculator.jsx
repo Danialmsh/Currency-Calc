@@ -86,7 +86,7 @@ const Calculator = ({rates}) => {
                 </div>
                 <div className="resultContainer">
                     <h2>
-                        {`هر ${amount} دلار آمریکا معادل ${amount * ratio} تومان`}
+                        {`هر ${amount} ${toRate.name} معادل ${amount * ratio} ${fromRate.name}`}
                     </h2>
                     <div className="firstResultContainer">
 
