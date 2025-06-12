@@ -2,6 +2,8 @@
 
 import Example from "@/components/inputs/option";
 import MyInput from "@/components/inputs/input";
+import {PriceDisplay} from "@/components/PriceDisplay";
+
 import {useEffect, useState, useMemo, useCallback} from "react";
 
 const Calculator = ({rates}) => {
@@ -117,7 +119,9 @@ const Calculator = ({rates}) => {
                             </div>
                             <div className="info">
                                 <div className="infoitem">
-                                    {`${1/ratio} ${toRate.name}`}
+                                    <PriceDisplay value={1 / ratio} />
+                                    {" "}
+                                     {fromRate.symbol}
                                 </div>
                                 <div className="infoitem">
                                     0.29%
